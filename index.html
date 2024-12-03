@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+    
     <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">Siva Paoren</div>
@@ -19,6 +19,8 @@
         </ul>
     </nav>
 
+    
+
     <!-- Hero Section -->
     <header class="hero">
         <h1>Hello, I'm Siva Paoren</h1>
@@ -26,6 +28,8 @@
 
         
     </header>
+    
+
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -39,26 +43,16 @@
         <div class="project-list">
     
     
-        <!--Starts here-->
+            <!--Starts here-->
 
                     <!-- Project Item -->
-            <div class="project-item" onclick="openModal()">
-                <img src="https://via.placeholder.com/300x200" alt="Project One Image">
-                <h3>Project One: Goku Game</h3>
-                <p>A Dino-style game featuring Dragon Ball characters and enhanced gameplay elements. Developed using JavaFX for an engaging and interactive experience</p>
-                <a href="https://github.com/yourproject1" target="_blank">View on GitHub</a>
-            </div>
-
-            <!-- Modal -->
-            <div class="modal" id="imageModal">
-                <div class="modal-content">
-                    <img src="https://via.placeholder.com/400x300" alt="Image 1">
-                    <img src="https://via.placeholder.com/400x300" alt="Image 2">
-                    <button class="modal-close" onclick="closeModal()">Close</button>
-                </div>
-            </div>
-
-    <!--ends here-->
+                    <div class="project-item" data-images="Images/goku/welcome1.png,Images/goku/welcome2.png,Images/goku/gameplay1.png,Images/goku/gameplay2.png,Images/goku/gameplay3.png,Images/goku/gameplay4.png,Images/goku/gameplay5.png,Images/goku/gameplay6.png">
+                        <img src="Images/goku/gameplay1.png" alt="Project One Image">
+                        <h3>Project One: Goku Game</h3>
+                        <p>A Dino-style game featuring Dragon Ball characters and enhanced gameplay elements. Developed using JavaFX for an engaging and interactive experience</p>
+                        <a href="https://github.com/yourproject1" target="_blank">View on GitHub</a>
+                    </div>
+            <!--ends here-->
 
             <!-- Project Two -->
             <div class="project-item">
@@ -71,10 +65,10 @@
             </div>
 
             <!-- project three -->
-            <div class="project-item">
-                <img src="https://via.placeholder.com/300x200" alt="Project Three Image">
-                <h3>Project Three: Tailor Website</h3>
-                <p>A custom website designed for a freelance client in the tailoring industry. Built using HTML, CSS, and JavaScript, it delivers a professional and user-friendly online presence.
+            <div class="project-item" data-images="Images/tailor/tailor1.png,Images/tailor/tailor2.png,Images/tailor/tailor3.png,Images/tailor/tailor4.png,Images/tailor/tailor5.png,Images/tailor/tailor6.png,Images/tailor/tailor7.png,Images/tailor/tailor8.png">
+                <img src="Images/tailor/tailor1.png" alt="Project Three Image">
+                <h3>Project Three: Boutique Website</h3>
+                <p>A custom website designed for a freelance client in the clothing industry. Built using HTML, CSS, and JavaScript, it delivers a professional and user-friendly online presence.
                 </p>
                 <a href="https://github.com/yourproject3" target="_blank">View on GitHub</a>
             </div>
@@ -88,19 +82,23 @@
                 <a href="https://github.com/yourproject3" target="_blank">View on GitHub</a>
             </div>
 
-            <!-- project five -->
-            <div class="project-item">
-                <img src="https://via.placeholder.com/300x200" alt="Project Three Image">
-                <h3>Project Five: Snake Game
-                </h3>
-                <p>A classic fun game developed with Java Swing, featuring a simple yet engaging fruit-eating mechanism.
-                </p>
-                <a href="https://github.com/yourproject3" target="_blank">View on GitHub</a>
-            </div>
+            
+
+            <!--Project 5 Starts here-->
+
+                    <!-- Project Item -->
+                    <div class="project-item" data-images="Images/snake/snake1.png,Images/snake/snake2.png,Images/snake/snake3.png,Images/snake/snake4.png,Images/snake/snake5.png">
+                        <img src="Images/snake/snake1.png" alt="Project One Image">
+                        <h3>Project Five: Snake Game</h3>
+                        <p>A classic fun game developed with Java Swing, featuring a simple yet engaging fruit-eating mechanism.</p>
+                        <a href="https://github.com/yourproject1" target="_blank">View on GitHub</a>
+                    </div>
+        
+            <!--Project five ends here-->
 
             <!-- project six -->
-            <div class="project-item">
-                <img src="https://via.placeholder.com/300x200" alt="Project Three Image">
+            <div class="project-item" data-images="Images/tictactoe/tictac1.png,Images/tictactoe/tictac2.png,Images/tictactoe/tictac3.png,Images/tictactoe/tictac4.png">
+                <img src="Images/tictactoe/tictac2.png" alt="Tic Tac Toe Image">
                 <h3>Project Six: Tic Tac Toe
 
                 </h3>
@@ -110,8 +108,8 @@
             </div>
 
             <!-- project seven -->
-            <div class="project-item">
-                <img src="https://via.placeholder.com/300x200" alt="Project Three Image">
+            <div class="project-item" data-images="Images/stopwatch/stopwatch1.png,Images/stopwatch/stopwatch2.png,Images/stopwatch/stopwatch3.png,Images/stopwatch/stopwatch4.png,Images/stopwatch/stopwatch5.png">
+                <img src="Images/stopwatch/stopwatch1.png" alt="Project Three Image">
                 <h3>Project seven: Stopwatch
 
 
@@ -120,6 +118,15 @@
                 </p>
                 <a href="https://github.com/yourproject3" target="_blank">View on GitHub</a>
             </div>
+
+            <!-- Modal -->
+            <div class="modal" id="imageModal">
+                <div class="modal-content" onclick="event.stopPropagation()">
+                    <!-- Images will be dynamically inserted here -->
+                    <button class="modal-close" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -145,6 +152,7 @@
         <p>If you'd like to collaborate or just want to say hello, feel free to drop me a message!</p>
         <a href="mailto:sivapaoren@example.com">Email Me</a>
     </section>
+
 
     <!-- Footer -->
     <footer class="footer">
