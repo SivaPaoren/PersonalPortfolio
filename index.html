@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Developer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Siva Paoren</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Hello, I'm Siva Paoren</h1>
+        <p>Software Engineer | Tech Enthusiast | Problem Solver</p>
+
+        
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate software developer with a focus on building scalable and efficient applications. My experience ranges from front-end development with React and Angular, to back-end systems using Java, Node.js, and Spring Boot.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-list">
+    
+    
+        <!--Starts here-->
+
+                    <!-- Project Item -->
+            <div class="project-item" onclick="openModal()">
+                <img src="https://via.placeholder.com/300x200" alt="Project One Image">
+                <h3>Project One: Goku Game</h3>
+                <p>A Dino-style game featuring Dragon Ball characters and enhanced gameplay elements. Developed using JavaFX for an engaging and interactive experience</p>
+                <a href="https://github.com/yourproject1" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal" id="imageModal">
+                <div class="modal-content">
+                    <img src="https://via.placeholder.com/400x300" alt="Image 1">
+                    <img src="https://via.placeholder.com/400x300" alt="Image 2">
+                    <button class="modal-close" onclick="closeModal()">Close</button>
+                </div>
+            </div>
+
+    <!--ends here-->
+
+            <!-- Project Two -->
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300x200" alt="Project Two Image">
+                <h3>Project Two: Mock Presidential Voting System
+
+                </h3>
+                <p>A web app for simulating presidential elections, built with Spring Boot, Thymeleaf, and PostgreSQL, featuring user authentication, real-time vote tracking, and a user-friendly interface.</p>
+                <a href="https://github.com/yourproject2" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- project three -->
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300x200" alt="Project Three Image">
+                <h3>Project Three: Tailor Website</h3>
+                <p>A custom website designed for a freelance client in the tailoring industry. Built using HTML, CSS, and JavaScript, it delivers a professional and user-friendly online presence.
+                </p>
+                <a href="https://github.com/yourproject3" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- project four -->
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300x200" alt="Project Three Image">
+                <h3>Project Four: Online Restaurant Menu System</h3>
+                <p>An interactive online menu platform with admin functionality for managing menu items via CRUD operations. Built with HTML, CSS, SCSS, JavaScript, Spring Boot, Hibernate, and MySQL for a seamless and efficient experience.
+                </p>
+                <a href="https://github.com/yourproject3" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- project five -->
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300x200" alt="Project Three Image">
+                <h3>Project Five: Snake Game
+                </h3>
+                <p>A classic fun game developed with Java Swing, featuring a simple yet engaging fruit-eating mechanism.
+                </p>
+                <a href="https://github.com/yourproject3" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- project six -->
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300x200" alt="Project Three Image">
+                <h3>Project Six: Tic Tac Toe
+
+                </h3>
+                <p>A classic Tic Tac Toe game developed using Java Swing, offering an interactive and enjoyable gameplay experience.
+                </p>
+                <a href="https://github.com/yourproject3" target="_blank">View on GitHub</a>
+            </div>
+
+            <!-- project seven -->
+            <div class="project-item">
+                <img src="https://via.placeholder.com/300x200" alt="Project Three Image">
+                <h3>Project seven: Stopwatch
+
+
+                </h3>
+                <p>A simple countdown and stopwatch application built with HTML, CSS, and vanilla JavaScript for smooth and responsive functionality.
+                </p>
+                <a href="https://github.com/yourproject3" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <h2>Blog</h2>
+        <div class="blog-post">
+            <h3>Understanding REST APIs</h3>
+            <p>A detailed guide to building scalable REST APIs using Node.js and Express.</p>
+            <a href="https://medium.com/@yourblogpost" target="_blank">Read more</a>
+        </div>
+        <div class="blog-post">
+            <h3>Introduction to Java Spring Boot</h3>
+            <p>Learn how to create a robust and scalable back-end system using Spring Boot in Java.</p>
+            <a href="https://medium.com/@yourblogpost2" target="_blank">Read more</a>
+        </div>
+        <!-- Add more blog posts as needed -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to collaborate or just want to say hello, feel free to drop me a message!</p>
+        <a href="mailto:sivapaoren@example.com">Email Me</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Siva Paoren | Built with passion and coffee</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
